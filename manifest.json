@@ -1,63 +1,37 @@
 {
   "name": "Factory Prep App",
   "short_name": "FactoryPrep",
-  "description": "An application to help with factory preparations and management.",
-  "start_url": "index.html",
-  "id": "/",
+  "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#eef4f8",
-  "theme_color": "#3498db",
+  "background_color": "#ffffff",
+  "theme_color": "#2196f3",
+  "orientation": "portrait",
+  "lang": "th",
+  "dir": "ltr",
+  "id": "/",
+  "description": "แอปเตรียมตัวเข้าทำงานในโรงงาน",
+  "iarc_rating_id": "e10+",
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512-maskable.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     }
   ],
-  "categories": ["productivity", "tools", "business"],
-  "shortcuts": [
+  "screenshots": [
     {
-      "name": "Add New Task",
-      "short_name": "New Task",
-      "description": "Quickly add a new task to your list.",
-      "url": "/add-task.html",
-      "icons": [{ "src": "icons/shortcut-add-task.png", "sizes": "96x96" }]
-    },
-    {
-      "name": "View Schedule",
-      "short_name": "Schedule",
-      "description": "Check the factory production schedule.",
-      "url": "/schedule.html",
-      "icons": [{ "src": "icons/shortcut-schedule.png", "sizes": "96x96" }]
+      "src": "screenshot1.png",
+      "sizes": "640x480",
+      "type": "image/png"
     }
   ]
-  // หากคุณมีแอปพลิเคชันเวอร์ชันเนทีฟบน App Store/Play Store ให้เปิดคอมเมนต์ส่วนนี้และกรอกข้อมูล
-  // "related_applications": [
-  //   {
-  //     "platform": "play",
-  //     "url": "https://play.google.com/store/apps/details?id=com.example.factoryprep",
-  //     "id": "com.example.factoryprep"
-  //   },
-  //   {
-  //     "platform": "itunes",
-  //     "url": "https://apps.apple.com/app/factory-prep-app/id123456789"
-  //   }
-  // ],
-  // หากต้องการควบคุมการเปิดแอปพลิเคชันอย่างละเอียด ให้เปิดคอมเมนต์ส่วนนี้
-  // "launch_handler": {
-  //   "client_mode": ["navigate-existing"]
-  // }
 }
