@@ -13,6 +13,7 @@
   "lang": "th",
   "dir": "ltr",
   "iarc_rating_id": "e5b8ae12-0000-0000-0000-000000000000",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "icons/icon-192.png",
