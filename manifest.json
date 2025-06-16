@@ -1,50 +1,92 @@
 {
   "name": "Factory Prep App",
   "short_name": "FactoryPrep",
-  "description": "Application for factory preparation and management",
-  "id": "/factory-prep/",
-  "start_url": "./index.html",
-  "scope": "./",
+  "id": "/",
+  "scope": "/",
+  "start_url": "/index.html",
   "display": "standalone",
+  "display_override": ["window-controls-overlay"],
   "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#2980b9",
+  "description": "แอปเตรียมตัวเข้าทำงานในโรงงาน สำหรับเรียนรู้วัฒนธรรม ลักษณะงาน และฝึกทักษะจำเป็น",
+  "lang": "th",
   "dir": "ltr",
-  "lang": "en-US",
-  "background_color": "#eef4f8",
-  "theme_color": "#3498db",
-  "categories": ["productivity", "business"],
-  "prefer_related_applications": false,
-  
+  "iarc_rating_id": "e5b8ae12-0000-0000-0000-000000000000",
   "icons": [
     {
       "src": "icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  
-  "screenshots": [
-    {
-      "src": "screenshots/mobile-screenshot.png",
-      "sizes": "375x812",
-      "type": "image/png",
-      "form_factor": "narrow"
+      "purpose": "any"
     },
     {
-      "src": "screenshots/desktop-screenshot.png",
-      "sizes": "1280x720",
+      "src": "icons/icon-512-maskable.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "form_factor": "wide"
+      "purpose": "maskable"
     }
   ],
-  
+  "screenshots": [
+    {
+      "src": "screenshots/home.png",
+      "sizes": "640x480",
+      "type": "image/png"
+    }
+  ],
   "launch_handler": {
     "client_mode": "navigate-existing"
-  }
+  },
+  "shortcuts": [
+    {
+      "name": "เข้าสู่บทเรียน",
+      "short_name": "บทเรียน",
+      "description": "ไปยังหน้าบทเรียน",
+      "url": "/lesson.html",
+      "icons": [{ "src": "icons/shortcut-lesson.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "จำลองสัมภาษณ์",
+      "short_name": "สัมภาษณ์",
+      "description": "ฝึกสัมภาษณ์งาน",
+      "url": "/interview.html",
+      "icons": [{ "src": "icons/shortcut-interview.png", "sizes": "96x96" }]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "shared_title",
+      "text": "shared_text",
+      "url": "shared_url",
+      "files": [
+        {
+          "name": "shared_file",
+          "accept": ["image/*"]
+        }
+      ]
+    }
+  },
+  "categories": ["education", "productivity"],
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.yourcompany.factoryprep",
+      "url": "https://play.google.com/store/apps/details?id=com.yourcompany.factoryprep"
+    }
+  ]
 }
