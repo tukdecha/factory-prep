@@ -1,9 +1,9 @@
 {
   "name": "Factory Prep App",
   "short_name": "FactoryPrep",
-  "id": "/",
-  "scope": "/",
-  "start_url": "/index.html",
+  "start_url": "/factory-prep/index.html",
+  "scope": "/factory-prep/",
+  "id": "/factory-prep/",
   "display": "standalone",
   "display_override": ["window-controls-overlay"],
   "orientation": "portrait",
@@ -28,13 +28,13 @@
       "purpose": "maskable"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "icons/icon-512-new.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-512-maskable.png",
+      "src": "icons/icon-512-new.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -55,19 +55,31 @@
       "name": "เข้าสู่บทเรียน",
       "short_name": "บทเรียน",
       "description": "ไปยังหน้าบทเรียน",
-      "url": "/lesson.html",
-      "icons": [{ "src": "icons/shortcut-lesson.png", "sizes": "96x96" }]
+      "url": "/factory-prep/lesson.html",
+      "icons": [
+        {
+          "src": "icons/shortcut-lesson.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "จำลองสัมภาษณ์",
       "short_name": "สัมภาษณ์",
       "description": "ฝึกสัมภาษณ์งาน",
-      "url": "/interview.html",
-      "icons": [{ "src": "icons/shortcut-interview.png", "sizes": "96x96" }]
+      "url": "/factory-prep/interview.html",
+      "icons": [
+        {
+          "src": "icons/shortcut-interview.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     }
   ],
   "share_target": {
-    "action": "/share",
+    "action": "/factory-prep/share",
     "method": "POST",
     "enctype": "multipart/form-data",
     "params": {
